@@ -1,0 +1,95 @@
+.app {
+
+}
+
+.app > .imageWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.app > .imageWrapper > img {
+  border: 15px solid black,;
+  width: 80%;
+  height: 500px;
+  display: block;
+  margin: auto;
+}
+
+.app > .imageWrapper > .quoteUnderlayer,
+.app > .imageWrapper > .quote {
+  text-align: center;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 60%;
+  height: 30%;
+  vertical-align: middle;
+}
+
+.app > .imageWrapper > .quoteUnderlayer {
+  border: 8px solid white;
+  opacity: 0.4;
+  background-color: white;
+}
+
+.line {
+  height:0px;
+  width:0px;
+  margin-bottom: 10px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 10px solid green;
+  background-image: linear-gradient(-90deg, red, yellow);
+  left: 10%;
+
+   -webkit-animation: increase 5s;
+   -moz-animation:    increase 5s;
+   -o-animation:      increase 5s;
+   animation:         increase 5s;
+   animation-fill-mode: forwards;
+   animation-iteration-count: infinite;
+}
+
+@keyframes increase {
+  100% {
+    width: 80%;
+  }
+}
+
+.top {
+  height:0px;
+  width:0px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 10px solid green;
+  right: 10%;
+
+   -webkit-animation: increase 5s;
+   -moz-animation:    increase 5s;
+   -o-animation:      increase 5s;
+   animation:         increase 5s;
+   animation-fill-mode: forwards;
+   animation-iteration-count: infinite;
+}
+
+.app button {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.app > .takenBy {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.app > .takenBy > span {
+  text-transform: capitalize;
+}
